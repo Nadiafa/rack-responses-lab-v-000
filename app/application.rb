@@ -1,7 +1,7 @@
 class Application 
   def call(env)
     resp = Rack::Response.new 
-    if Time.now.hour 
+    if Time.now.hour => 00
       resp.write "Good morning"
     else
       resp.write"Good afternoon"
